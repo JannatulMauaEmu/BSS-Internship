@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Carousel</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center fw-bold mb-4">Featured Slide</h2>
+
+                <div id="practiceCarousel" class="carousel slide shadow rounded overflow-hidden" data-bs-ride="carousel">
+
+                    <!--Indicators-->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#practiceCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#practiceCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    </div>
+
+                    <!--Carousel items-->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active bg-dark text-white p-5 text-center" style="min-height:200px;">
+                            <div class="py-5">
+                                <h3 class="fw-bold">Beginner</h3>
+                                <p class="lead">Combination of HTML, CSS and Bootstrap</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item bg-primary text-white p-5 text-center" style="min-height:200px;">
+                            <div class="py-5">
+                                <h3 class="fw-bold">Intermediate</h3>
+                                <p class="lead">Grid, components and responsive design</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Prev / Next controls-->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#practiceCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#practiceCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!--Bootstrap JS bundle (required for the carousel)-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
