@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--Bootstrap 5.3 CSS CDN-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <title>Introduction of Bootstrap</title>
+    </head>
+
+    <body>
+        <div class="container mt-4">
+            <p>
+                Bootstrap is the world's most popular front-end open-source toolkit for building responsive, mobile-first websites and web applications.
+                It provides a massive library of pre-styled CSS and JavaScript components—such as navigation bars, modals, buttons, alerts, cards, and grid systems—that allow developers to build modern, clean user interfaces quickly without writing everything from scratch.
+            </p>
+        </div>
+
+        <!--Container-->
+        <div class="container my-5 text-center">
+            <h1 class="display-3 fw-bold text-primary mb-3">Bootstrap 5 Practice</h1>
+            <p class="lead text-muted">Learn Container, Button Variations</p>
+
+            <!--Button Variations-->
+            <div class="d-flex justify-content-center gap-2 my-4">
+                <button class="btn btn-primary">Primary</button>
+                <button class="btn btn-secondary">Secondary</button>
+                <button class="btn btn-success">Success</button>
+                <button class="btn btn-outline-danger">Outline Danger</button>
+                <button class="btn btn-warning btn-lg">Large Warning</button>
+            </div>
+        </div>
+
+        <!--Grid Practice-->
+        <section class="py-5 bg-light border-top border-bottom">
+            <div class="container">
+                <h2 class="text-center fw-bold mb-4">Mastering the Grid class</h2>
+
+                <!--column layout on screens-->
+                <div class="row g-4">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="p-4 bg-dark rounded shadow-sm text-center">
+                            <h4 class="text-primary fw-bold">Column 1</h4>
+                            <p class="text-muted mb-0">Class: <code>col-12 col-md-6 col-lg-4</code></p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="p-4 bg-dark rounded shadow-sm text-center">
+                            <h4 class="text-success fw-bold">Column 2</h4>
+                            <p class="text-muted mb-0">Class: <code>col-12 col-md-6 col-lg-4</code></p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="p-4 bg-dark rounded shadow-sm text-center">
+                            <h4 class="text-danger fw-bold">Column 3</h4>
+                            <p class="text-muted mb-0">Class: <code>col-12 col-md-6 col-lg-4</code></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
