@@ -8,7 +8,7 @@
     <script>
         document.writeln("Emu <br>");
         document.writeln(4 + 9 + "<br><br><br>");
-
+        //use of variable
         var name = "Emu";
         var age = 20;
         var address = "Dhaka";
@@ -16,6 +16,43 @@
         document.writeln(name + "<br>");
         document.writeln(age + "<br>");
         document.writeln(address + "<br>");
+
+        //use of const
+        const x = 100;
+        document.writeln(x + "<br>");
+
+        //type conversion
+        document.writeln("<br><br>Type Conversion<br><br>");
+
+        //1.String to Number
+        document.writeln("String to Number" + "<br>");
+        document.writeln(Number("25") + "<br>");            // 25
+        document.writeln(Number("abc") + "<br>");           // NaN
+        document.writeln(parseInt("25") + "<br>");          // 25
+        document.writeln(parseFloat("25.6") + "<br>");      // 25.6
+        document.writeln(typeof Number("25") + "<br><br><br>"); // number
+
+        //2.Number to string
+        document.writeln("Number to String" + "<br>");
+        document.writeln(String(100) + "<br>");             // 100
+        document.writeln((50).toString() + "<br>");         // 50
+        document.writeln(typeof String(100) + "<br><br><br>"); // string
+
+        //3.To Boolean
+        document.writeln("To Boolean" + "<br>");
+        document.writeln(Boolean(0) + "<br>");              // false
+        document.writeln(Boolean("") + "<br>");             // false (empty string)
+        document.writeln(Boolean(" ") + "<br>");            // true  (a space is not empty)
+        document.writeln(Boolean(null) + "<br>");           // false
+        document.writeln(Boolean(1) + "<br>");              // true
+        document.writeln(Boolean("Hello") + "<br><br><br>"); // true
+
+        //4.Type of
+        document.writeln("typeof" + "<br>");
+        document.writeln(typeof 25 + "<br>");               // number
+        document.writeln(typeof "25" + "<br>");             // string
+        document.writeln(typeof true + "<br>");             // boolean
+        document.writeln(typeof undefined + "<br>");        // undefined
     </script>
 </body>
 </html>
